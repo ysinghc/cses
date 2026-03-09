@@ -6,21 +6,22 @@ int main(void)
 {
     string dna;
     cin >> dna;
-    
+
     auto front = dna.begin();
     auto rear = dna.begin();
-    
+
     int ans = 0;
     int temp = 0;
-    
+
     while (rear < dna.end())
     {
-        if(*rear == *front)
+        if (*rear == *front)
         {
             temp++;
             ans = max(ans, temp);
         }
-        else{
+        else
+        {
             temp = 1;
             front = rear;
         }

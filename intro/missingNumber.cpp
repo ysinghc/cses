@@ -6,8 +6,8 @@ int main(void)
 {
     long int n;
     cin >> n;
-    long long target = (n*(n+1))/2;
-    for(int i = 1 ; i < n ; i++)
+    long long target = (n * (n + 1)) / 2;
+    for (int i = 1; i < n; i++)
     {
         int temp;
         cin >> temp;

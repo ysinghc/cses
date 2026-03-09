@@ -6,17 +6,17 @@ int main(void)
 {
     long long n;
     cin >> n;
-    while(n!=1)
+    while (n != 1)
     {
         cout << n << " ";
-        if(n&1)
+        if (n & 1)
         {
-            n*=3;
+            n *= 3;
             n++;
         }
         else
         {
-            n/=2;
+            n /= 2;
         }
     }
     cout << n << endl;
